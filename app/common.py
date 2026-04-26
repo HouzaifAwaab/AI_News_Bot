@@ -1,15 +1,12 @@
 import os
 import logging
 from aiogram import Bot
-from dotenv import load_dotenv
-
-load_dotenv(dotenv_path=os.path.join("keys", "keys.env"))
-
-TOKEN = os.getenv("TELEGRAM_TOKEN")
-CHANNEL_ID = os.getenv("TG_CHANNEL_ID")
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
+
+TOKEN = os.getenv("TELEGRAM_TOKEN")
+CHANNEL_ID = os.getenv("TG_CHANNEL_ID")
 
 _bot = None
 
