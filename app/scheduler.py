@@ -11,7 +11,7 @@ from aiogram.utils.keyboard import InlineKeyboardBuilder
 from app.fetchers.rss import RSSFetcher
 from app.fetchers.github import GitHubTrendingFetcher
 from app.fetchers.taaft import TAAFTFetcher
-from db import init_db, add_source, get_connection, mark_as_sent, get_news_reactions, is_source_active
+from app.db import init_db, add_source, get_connection, mark_as_sent, get_news_reactions, is_source_active
 from summarizer import process_news
 from ranker import compute_score
 from common import logger, get_bot, clean_html
