@@ -24,6 +24,7 @@ class RSSFetcher:
                     "link": entry.get("link", ""),
                     "summary": entry.get("summary", ""),
                     "published": entry.get("published", datetime.now().isoformat()),
+                    "source_id": self.source_id,   # <--- أضف هذا السطر
                 })
             return items
         except Exception as e:
