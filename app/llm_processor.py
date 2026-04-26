@@ -1,21 +1,21 @@
 import os
+import asyncio
 import google.generativeai as genai
-from dotenv import load_dotenv
 import logging
 
 logger = logging.getLogger(__name__)
 
-load_dotenv(dotenv_path=os.path.join("keys", "keys.env"))
+# المفتاح بيُقرأ من البيئة بعد ما GitHub يضخه
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 model = genai.GenerativeModel('gemini-2.0-flash')
 
 async def summarize_news(articles_text):
     prompt = f"""
-    لخّص الأخبار التالية باللغة العربية في نقاط قصيرة وموجزة:
+    لخّص الأخبار التالية باللغة العربية في 3-4 جمل موجزة:
     {articles_text}
     """
     try:
-        response = model.generate_content(prompt)
+        response = await asyncio.to_thread(model.generate_content, prompt)
         return response.text
     except Exception as e:
         logger.error(f"Gemini error: {e}")
