@@ -19,7 +19,6 @@ async def process_news(items):
                 published = datetime.now()
         score = compute_score(url=url, title=title, source_id=source_id, published=published)
         impact = min(3, max(1, int(score / 2)))
-        added = add_news_item(url, title, source_id, published, score, impact, "")
-        if added:
-            processed.append({"url": url, "title": title, "source_id": source_id, "impact": impact})
-    return processed
+        if add_news_item(url, title, source_id, published, score, impact, ""):
+            processed.append(item)
+    return processed   # بس الأخبار الجديدة
