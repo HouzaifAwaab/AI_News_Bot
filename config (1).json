@@ -1,0 +1,112 @@
+{
+  "suna": {
+    "type": "rss",
+    "url": "https://sunanews.net/feed/",
+    "lang": "ar"
+  },
+  "suna_economy": {
+    "type": "rss",
+    "url": "https://sunanews.net/category/economy/feed/",
+    "lang": "ar"
+  },
+  "sudantribune": {
+    "type": "rss",
+    "url": "https://sudantribune.net/feed/",
+    "lang": "ar"
+  },
+  "dabanga": {
+    "type": "rss",
+    "url": "https://www.dabangasudan.org/ar/feed/",
+    "lang": "ar"
+  },
+  "alrakoba": {
+    "type": "rss",
+    "url": "http://www.alrakoba.net/rss-action-feed-m-news-id--feed-rss20.xml",
+    "lang": "ar"
+  },
+  "bbc_arabic": {
+    "type": "rss",
+    "url": "https://feeds.bbci.co.uk/arabic/rss.xml",
+    "lang": "ar"
+  },
+  "bbc_business": {
+    "type": "rss",
+    "url": "https://feeds.bbci.co.uk/arabic/business/rss.xml",
+    "lang": "ar"
+  },
+  "bbc_sport": {
+    "type": "rss",
+    "url": "https://feeds.bbci.co.uk/sport/rss.xml",
+    "lang": "en"
+  },
+  "alaraby": {
+    "type": "rss",
+    "url": "https://www.alaraby.co.uk/feed/",
+    "lang": "ar"
+  },
+  "aawsat_politics": {
+    "type": "rss",
+    "url": "https://aawsat.com/feed/political",
+    "lang": "ar"
+  },
+  "aawsat_economy": {
+    "type": "rss",
+    "url": "https://aawsat.com/feed/economy",
+    "lang": "ar"
+  },
+  "aawsat_sport": {
+    "type": "rss",
+    "url": "https://aawsat.com/feed/sport",
+    "lang": "ar"
+  },
+  "cnbc_arabic": {
+    "type": "rss",
+    "url": "https://www.cnbcarabia.com/feed/",
+    "lang": "ar"
+  },
+  "un_climate": {
+    "type": "rss",
+    "url": "https://news.un.org/feed/subject/climate-change/lang/ar",
+    "lang": "ar"
+  },
+  "france24_climate": {
+    "type": "rss",
+    "url": "https://www.france24.com/ar/environment/rss",
+    "lang": "ar"
+  },
+  "dw": {
+    "type": "rss",
+    "url": "https://rss.dw.com/rdf/rss-ar-all",
+    "lang": "ar"
+  },
+  "euronews": {
+    "type": "rss",
+    "url": "https://arabic.euronews.com/feed",
+    "lang": "ar"
+  },
+  "fifa": {
+    "type": "rss",
+    "url": "https://www.fifa.com/rss/",
+    "lang": "en"
+  },
+  "uefa": {
+    "type": "rss",
+    "url": "https://www.uefa.com/rssfeed/news/rss.xml",
+    "lang": "en"
+  },
+  "caf": {
+    "type": "rss",
+    "url": "https://www.cafonline.com/rss/news/",
+    "lang": "en"
+  },
+  "afc": {
+    "type": "rss",
+    "url": "https://www.the-afc.com/rss/all",
+    "lang": "en"
+  },
+  "anbasudan": {
+    "type": "rss",
+    "url": "https://anbasudan.com/feed/",
+    "lang": "ar"
+  }
+}
