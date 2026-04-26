@@ -2,8 +2,8 @@ name: تشغيل بوت الأخبار
 
 on:
   schedule:
-    - cron: '0 */6 * * *'  # كل 6 ساعات
-  workflow_dispatch:        # يسمح بالتشغيل اليدوي
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
 
 jobs:
   run-bot:
@@ -18,10 +18,9 @@ jobs:
           python-version: '3.11'
 
       - name: تثبيت المكتبات
-        run: |
-          pip install -r requirements.txt
+        run: pip install -r requirements.txt
 
-      - name: تشغيل البوت
+      - name: تشغيل جلب الأخبار
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TG_CHANNEL_ID: ${{ secrets.TG_CHANNEL_ID }}
